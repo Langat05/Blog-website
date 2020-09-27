@@ -21,3 +21,23 @@ def register():
         flash('Your account has been created', 'primary')
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)    
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = LoginForm()
+    if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user and bcrypt.check_password_hash(user.password, form.password.data):
+            login_user(user, remember=form.remember.data)
+            return redirect(url_for('home'))
+        else:
+            flash('Error. Please check your email and password', 'danger')
+    return render_template('login.html', title='Login', form=form)
+
+
+@app.route("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for('home'))    
