@@ -1,4 +1,5 @@
-from app import app
+from app import app, requests
+
 
 @app.route('/')
 @app.route("/home")
