@@ -1,14 +1,11 @@
-{ % extends "landing.html" % }
+{% extends "landing.html" %}
 {% block content %}
-<div class="container quotes">
+<div class="container quotes" style="margin-top: 60px;">
     <h1 class="text-center">Great Blogs</h1>
 <div class="m-5">
     <blockquote class="quote-box text-center primary-color">
-        <p class="quotation-mark">
-            "
-        </p>
         <p class="quote-text">
-            {{quote.quote}}
+            " {{quote.quote}} "
         </p>
         <hr />
         <div class="blog-post-actions">
@@ -40,4 +37,4 @@
     {% endfor %}
     </div>
     
-    {% endblock content %
+    {% endblock content %}

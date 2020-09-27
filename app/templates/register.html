@@ -1,10 +1,10 @@
-{%extends "landing.html"%}
+{% extends "landing.html" %}
 {%block content%}
-<div class="content-section">
+<div class="content-section" style="margin-top: 60px;">
 <form method="POST" action="">
 {{form.hidden_tag() }}
 <fieldset class="form-group">
-<legend class="border-bottom mb-4">Be part of great legends</legend>
+<legend class="border-bottom mb-4">Be part of great legends, register now and post your quote</legend>
 <div class="form-group">
     {{ form.username.label(class="form-control-label") }}
     {%if form.username.errors%}
