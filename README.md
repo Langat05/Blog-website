@@ -48,6 +48,9 @@ The application shows the date when the post was posted and also when the commen
 
 One known bug is on deleting a comment. This feature deletes together with the post.
 
+## Codebeat
+
+[![codebeat badge](https://codebeat.co/badges/ae1e1d11-e9c8-4a0f-aebb-06a59036564a)](https://codebeat.co/projects/github-com-langat05-blog-website-master)
 
 
 ## License
