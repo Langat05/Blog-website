@@ -23,6 +23,8 @@ The application shows the date when the post was posted and also when the commen
 
 - User can logout out of the application
 
+## Screenshot
+[![Screenshot-from-2020-09-29-06-47-06.png](https://i.postimg.cc/MZ1J7Vnr/Screenshot-from-2020-09-29-06-47-06.png)](https://postimg.cc/Lh4WRqBz)
 
 ## Setup Installation
 
